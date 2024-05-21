@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrom Board</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .board {
+            width: 400px;
+            height: 400px;
+            background-color: #f2e8b6;
+            border: 20px solid #8b4513;
+            position: relative;
+        }
+        .pocket {
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .pocket.tl { top: -10px; left: -10px; }
+        .pocket.tr { top: -10px; right: -10px; }
+        .pocket.bl { bottom: -10px; left: -10px; }
+        .pocket.br { bottom: -10px; right: -10px; }
+        .circle {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #8b4513;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .circle.center {
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="board">
+        <div class="pocket tl"></div>
+        <div class="pocket tr"></div>
+        <div class="pocket bl"></div>
+        <div class="pocket br"></div>
+        <div class="circle center"></div>
+    </div>
+</body>
+</html>
